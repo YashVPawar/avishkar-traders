@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
     margin: 0;
     padding: 0;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
@@ -51,12 +52,16 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s;
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #000;
+    background-color: #fff;
+    transform: scale(1.05);
 }
 
 main {
@@ -80,6 +85,7 @@ h2 {
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
     font-size: 1.8rem;
+    font-weight: 700;
 }
 
 p {
@@ -105,7 +111,23 @@ footer {
     margin-top: 1rem;
 }
 
+.tradition-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
 .product-img {
+    width: 30%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 0.5rem;
+}
+
+.tradition-img {
     width: 30%;
     max-width: 200px;
     height: auto;
